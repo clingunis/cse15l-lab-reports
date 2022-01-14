@@ -18,3 +18,5 @@ This is some test text.
 * What do you guys think?
 
 ---
+
+This is text added after local repo changes.
