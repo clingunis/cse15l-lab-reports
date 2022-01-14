@@ -7,4 +7,4 @@ This is some test text.
 
 ## This is what Heading 2 looks like
 
-[Link](
+[This is a link to this webpage.](https://github.com/clingunis/cse15l-lab-reports/blob/main/index.md)
