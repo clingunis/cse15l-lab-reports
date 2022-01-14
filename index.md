@@ -12,3 +12,9 @@ This is some test text.
 ![Image](https://227263-694567-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/12/Among-Us-Red-Crewmate.png)
 
 >Among Us
+
+* I think red is pretty sus.
+* Idk
+* What do you guys think?
+
+---
