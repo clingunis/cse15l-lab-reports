@@ -21,3 +21,5 @@ This is some test text.
 
 This is text added after local repo changes.
 This is some MORE text added after local changes.
+
+[Lab Report 1](https://clingunis.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
