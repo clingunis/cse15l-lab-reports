@@ -46,13 +46,9 @@ Now that you are logged in remotely, you should be able to try various different
 
 Now we will go over how to move local files to ieng6. This is useful for a variety of reasons from using ieng6's computing power to having a remote save of your files. The key portion of this step is to enter the command "scp" when you are in the working directory where the file you want to move is located. When you are in the directory (use "cd" command), type the "scp" command in the following format: "scp (fileName).java (cs15laccount)@ieng6.ucsd.edu:~/". Typing this command will prompt you for your password. Enter the password and it should show an upload report. I have included an example below where I upload a Java file and then compile and run it on ieng6.
 
-![Image][1]
+![Image](/Images/Part5-2.PNG)
 
-![Image][2]
-
-[1]:/Images/Part5-2.PNG
-
-[2]:/Images/Part5-1.PNG
+![Image](/Images/Part5-1.PNG)
 
 ---
 
