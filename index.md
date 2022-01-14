@@ -20,3 +20,4 @@ This is some test text.
 ---
 
 This is text added after local repo changes.
+This is some MORE text added after local changes.
