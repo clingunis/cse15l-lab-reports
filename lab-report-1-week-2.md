@@ -1,5 +1,5 @@
 ![Image](Images/Among-Us-Red-Crewmate.png)
 
-[Index](lab-report-1-week-2.html)
+[Back to Index](index.html)
 
-[Index](https://clingunis.github.io/cse15l-lab-reports/index.html)
+[Back to Index](https://clingunis.github.io/cse15l-lab-reports/index.html)
