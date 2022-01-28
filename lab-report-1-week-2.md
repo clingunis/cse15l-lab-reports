@@ -88,6 +88,8 @@ Here's a picture of what implementing these two techniques at the same time look
 
 ![Image](/Images/Part7.PNG)
 
+Now, let's do a comparison of how many keystrokes this just saved us. The command entered in the image above has 40 keystrokes, including hitting the "Enter" key to run the command. If we were to log in to ieng6 and run these commands separately, the total number of keystrokes would be 43, including the ```exit``` command to log out. This just saved us 3 keystrokes. This doesn't sound like a lot but it adds up over the course of a long project. In short, using the quotes to run ssh commands remotely does save keystrokes. Now let's take a look at how many keystrokes the semicolon saved us. The command in the image above has 40 keystrokes. If we were to enter ```ssh cs15lwi22@ieng6.ucsd.edu "ls -a"``` and ```ssh cs15lwi22@ieng6.ucsd.edu "ls"``` separately, that's a total of 71 keystrokes! Now, suppose we had a passphrase on our ssh key instead of no passphrase. Let's say this passphrase is x characters long. This would be 71+2x keystrokes since we would have to enter our passphrase an additional time, as opposed to 40+x keystrokes. The command in the picture just saved 31+x keystrokes. That adds up very fast over time! Using the two techniques listed above together will save a lot of keystrokes in the long run.
+
 ---
 
 Closing Message
