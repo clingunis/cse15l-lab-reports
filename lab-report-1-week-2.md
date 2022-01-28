@@ -22,7 +22,7 @@ If you are on Windows, you will need to install OpenSSH on your PC. Open Setting
 
 Next, obtain your UCSD CSE 15L account ID from this [link](https://sdacs.ucsd.edu/~icc/index.php). To activate it, you will need to globally reset your password on your UCSD Active Directory. This will take 15-20 minutes after resetting to activate.
 
-Next, open a new terminal in VSCode. You can do this with the command Terminal -> New Terminal or Ctrl or Command + `. Then, type the command ```ssh (yourUCSDcse15laccountID)@ieng6.ucsd.edu```. Hit enter. It will ask you if you want to continue connecting after the authenticity of the host can't be established. Type ```yes``` and hit enter again. It will ask you for your password. So far the steps should look like this: 
+Next, open a new terminal in VSCode. You can do this with the command Terminal -> New Terminal or Ctrl or Command + Backtick. Then, type the command ```ssh (yourUCSDcse15laccountID)@ieng6.ucsd.edu```. Hit enter. It will ask you if you want to continue connecting after the authenticity of the host can't be established. Type ```yes``` and hit enter again. It will ask you for your password. So far the steps should look like this: 
 
 ![Image](/Images/Part3.PNG)
 
