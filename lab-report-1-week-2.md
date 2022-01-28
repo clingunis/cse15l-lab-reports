@@ -22,7 +22,7 @@ If you are on Windows, you will need to install OpenSSH on your PC. Open Setting
 
 Next, obtain your UCSD CSE 15L account ID from this [link](https://sdacs.ucsd.edu/~icc/index.php). To activate it, you will need to globally reset your password on your UCSD Active Directory. This will take 15-20 minutes after resetting to activate.
 
-Next, open a new terminal in VSCode. You can do this with the command Terminal -> New Terminal or Ctrl or Command + `. Then, type the command "$ssh (yourUCSDcse15laccountID)@ieng6.ucsd.edu". Hit enter. It will ask you if you want to continue connecting after the authenticity of the host can't be established. Type "yes" and hit enter again. It will ask you for your password. So far the steps should look like this: 
+Next, open a new terminal in VSCode. You can do this with the command Terminal -> New Terminal or Ctrl or Command + `. Then, type the command ```ssh (yourUCSDcse15laccountID)@ieng6.ucsd.edu```. Hit enter. It will ask you if you want to continue connecting after the authenticity of the host can't be established. Type ```yes``` and hit enter again. It will ask you for your password. So far the steps should look like this: 
 
 ![Image](/Images/Part3.PNG)
 
@@ -36,7 +36,7 @@ At this point you are logged in to ieng6, a remote UCSD computer.
 
 **Step 3: Trying Out Some Commands**
 
-Now that you are logged in remotely, you should be able to try various different commands in the command line. Feel free to experiment! Some useful commands are: cd, cd ~, ls -a, ls -lat, and more. I have included an image of what ls -a looks like below.
+Now that you are logged in remotely, you should be able to try various different commands in the command line. Feel free to experiment! Some useful commands are: ```cd```, ```cd ~```, ```ls -a```, ```ls -lat```, and more. I have included an image of what ```ls -a``` looks like below.
 
 ![Image](/Images/Part4.PNG)
 
@@ -44,7 +44,7 @@ Now that you are logged in remotely, you should be able to try various different
 
 **Step 4: Moving Files with scp**
 
-Now we will go over how to move local files to ieng6. This is useful for a variety of reasons from using ieng6's computing power to having a remote save of your files. The key portion of this step is to enter the command "scp" when you are in the working directory where the file you want to move is located. When you are in the directory (use "cd" command), type the "scp" command in the following format: "scp (fileName).java (cs15laccount)@ieng6.ucsd.edu:~/". Typing this command will prompt you for your password. Enter the password and it should show an upload report. I have included an example below where I upload a Java file and then compile and run it on ieng6.
+Now we will go over how to move local files to ieng6. This is useful for a variety of reasons from using ieng6's computing power to having a remote save of your files. The key portion of this step is to enter the command ```scp``` when you are in the working directory where the file you want to move is located. When you are in the directory (use "cd" command), type the ```scp``` command in the following format: ```scp (fileName).java (cs15laccount)@ieng6.ucsd.edu:~/```. Typing this command will prompt you for your password. Enter the password and it should show an upload report. I have included an example below where I upload a Java file and then compile and run it on ieng6.
 
 ![Image](/Images/Part5-2.PNG)
 
@@ -56,16 +56,16 @@ Now we will go over how to move local files to ieng6. This is useful for a varie
 
 This portion will allow you to set a private SSH key on your pc and a public SSH key on ieng6 so you will not have to enter your password every time to run commands on ieng6. 
 
-First, run the command "ssh-keygen" in terminal. It should give you a message similar to this:
+First, run the command ```ssh-keygen``` in terminal. It should give you a message similar to this:
 
 ![Image](/Images/Part6-2.PNG)
 
 It will ask you for a passphrase. Hit enter to set no passphrase. This means a private and public key were just created in your .ssh folder in your User directory. The public key should have ".pub" at the end of the file name. At this point, you do not need to do anything with the private key. We will now upload the public key to your ieng6 account. To do this, run the following commands in order:
 
 1. Log in to ieng6 with ssh as before and enter password.
-2. Run command "mkdir .ssh"
-3. Enter "exit" command.
-4. Run command "$scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys". Note that you should use your personal User directory, private key name, and ieng6 account.
+2. Run command ```mkdir .ssh```
+3. Enter ```exit``` command.
+4. Run command ```scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys```. Note that you should use your personal User directory, private key name, and ieng6 account.
 
 You should now be able to log into ieng6 via ssh and run scp without having to enter your password. Here is an image of what this looks like:
 
@@ -78,7 +78,7 @@ You should now be able to log into ieng6 via ssh and run scp without having to e
 There is nothing to actually set up in this step, but some helpful tips are here.
 
 You can write a command to be run on ieng6 without logging in directly on your terminal by using the following format:
-ssh cs15lwi22@ieng6.ucsd.edu "(command name)"
+```ssh cs15lwi22@ieng6.ucsd.edu "(command name)"```
 
 Assuming you have SSH keys set up, you don't even need to enter your password for this to run on ieng6. Note that as soon as the command finishes, it will log you out.
 
