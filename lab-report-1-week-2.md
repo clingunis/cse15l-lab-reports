@@ -44,7 +44,7 @@ Now that you are logged in remotely, you should be able to try various different
 
 **Step 4: Moving Files with scp**
 
-Now we will go over how to move local files to ieng6. This is useful for a variety of reasons from using ieng6's computing power to having a remote save of your files. The key portion of this step is to enter the command ```scp``` when you are in the working directory where the file you want to move is located. When you are in the directory (use "cd" command), type the ```scp``` command in the following format: ```scp (fileName).java (cs15laccount)@ieng6.ucsd.edu:~/```. Typing this command will prompt you for your password. Enter the password and it should show an upload report. I have included an example below where I upload a Java file and then compile and run it on ieng6.
+Now we will go over how to move local files to ieng6. This is useful for a variety of reasons from using ieng6's computing power to having a remote save of your files. The key portion of this step is to enter the command ```scp``` when you are in the working directory where the file you want to move is located. When you are in the directory (use ```cd``` command), type the ```scp``` command in the following format: ```scp (fileName).java (cs15laccount)@ieng6.ucsd.edu:~/```. Typing this command will prompt you for your password. Enter the password and it should show an upload report. I have included an example below where I upload a Java file and then compile and run it on ieng6.
 
 ![Image](/Images/Part5-2.PNG)
 
@@ -62,7 +62,7 @@ First, run the command ```ssh-keygen``` in terminal. It should give you a messag
 
 It will ask you for a passphrase. Hit enter to set no passphrase. This means a private and public key were just created in your .ssh folder in your User directory. The public key should have ".pub" at the end of the file name. At this point, you do not need to do anything with the private key. We will now upload the public key to your ieng6 account. To do this, run the following commands in order:
 
-1. Log in to ieng6 with ssh as before and enter password.
+1. Log in to ieng6 with ```ssh``` as before and enter password.
 2. Run command ```mkdir .ssh```
 3. Enter ```exit``` command.
 4. Run command ```scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys```. Note that you should use your personal User directory, private key name, and ieng6 account.
