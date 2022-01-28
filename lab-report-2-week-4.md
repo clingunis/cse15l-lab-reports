@@ -9,7 +9,7 @@ Code Change:
 
 Failure-inducing Input File:
 
-[Link to the file](https://raw.githubusercontent.com/clingunis/markdown-parse/main/test-file2.md)
+[Link to the file](https://github.com/clingunis/markdown-parse/blob/main/test-file2.md)
 
 Symptom Screenshot:
 
@@ -29,7 +29,7 @@ Code Change:
 
 Failure-inducing Input File:
 
-[Link to the file](https://raw.githubusercontent.com/clingunis/markdown-parse/main/test-file3.md)
+[Link to the file](https://github.com/clingunis/markdown-parse/blob/main/test-file3.md)
 
 Symptom Screenshot:
 
@@ -49,7 +49,7 @@ Code Change:
 
 Failure-inducing Input:
 
-[Link to the file](https://raw.githubusercontent.com/clingunis/markdown-parse/main/test-file8.md)
+[Link to the file](https://github.com/clingunis/markdown-parse/blob/main/test-file8.md)
 
 Symptom Screenshot:
 
