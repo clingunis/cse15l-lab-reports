@@ -12,7 +12,7 @@ For this lab report I have chosen to do Group Task 1 from Week 5 Lab: Streamlini
 
 ![Image](Images/LabReport3-1.PNG)
 
-This is a picture of where my ```.ssh/config file``` is located along with the software I used to edit it. I used Notepad to edit the file and I've displayed the edited contents of the file in Notepad. I realize I could have edited this with VSCode but Notepad is the default option for my PC.
+This is a picture of where my ```.ssh/config``` file is located along with the software I used to edit it. I used Notepad to edit the file and I've displayed the edited contents of the file in Notepad. I realize I could have edited this with VSCode but Notepad is the default option for my PC.
 
 ---
 
