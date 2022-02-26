@@ -43,7 +43,7 @@ My Output:
 
 The JUnit test did not pass because my code did not have a check for back ticks inside/outside the main pair of brackets. It also failed because my current code does not allow brackets inside of the main brackets; it parses until it finds the first close bracket. 
 
-These two issues will each involve their own code changes and will not be small. I may have to implement a stack and/or helper method that pushes and pops brackets to deal with the nested brackets. For the back ticks, I could try checking for the last open back tick and seeing if the current openBracket is within the code block. But this check will likely introduce other problems, such as what if only the close bracket is contained within back ticks. Other issues would include how to parse for backticks so that one back tick may be in a bracket and the other in the parentheses and the link is still considered valid. A stack and/or helper method may have to be implemented for this as well.
+These two issues will each involve their own code changes and will not be small. I may have to implement a stack and/or helper method that pushes and pops brackets to deal with the nested brackets. For the back ticks, I could try checking for the last open back tick and seeing if the current openBracket is within the code block, but this check will likely introduce other problems. One such problem is what if only the close bracket is contained within back ticks. Other issues would include how to parse for backticks so that one back tick may be in a bracket and the other in the parentheses and the link is still considered valid. A stack and/or helper method may have to be implemented for this as well.
 
 ## Snippet #2
 How I made the test:
@@ -54,7 +54,7 @@ My Output:
 
 The JUnit test did not pass because my code does not allow for nested parentheses nor brackets, it stops the link at the first close parenthesis.
 
-As stated before, this would likely be a more involved fix that involves creating a stack/helper method to push and pop brackets or parentheses. Alternatively I could rewrite nextCloseParen and nextCloseBracket to find the last close parenthesis/close bracket before the next open one, but that introduces a whole host of new checks and problems.
+As stated before, this would likely be a more involved fix that involves creating a stack/helper method to push and pop brackets or parentheses. Alternatively, I could rewrite nextCloseParen and nextCloseBracket to find the last close parenthesis/close bracket before the next open one, but that introduces a whole host of new checks and problems.
 
 ## Snippet #3
 How I made the test:
