@@ -54,7 +54,7 @@ My Output:
 
 The JUnit test did not pass because my code does not allow for nested parentheses nor brackets, it stops the link at the first close parenthesis.
 
-As stated before, this would likely be a more involved fix that involves creating a stack/helper method to push and pop brackets or parentheses. Alternatively, I could rewrite nextCloseParen and nextCloseBracket to find the last close parenthesis/close bracket before the next open one, but that introduces a whole host of new checks and problems.
+As stated before, this would likely be a more involved fix that involves creating a stack/helper method to push and pop brackets or parentheses. Alternatively, I could rewrite nextCloseParen and nextCloseBracket to find the last close parenthesis/close bracket before the next open one, but that introduces a whole host of new checks and problems. In addition, I should add checks to allow for escaped brackets to be added to this helper/stack and treat them differently than normal brackets. The implementation of this would require more lines, time and consideration of where escaped brackets should be allowed and especially how they should interact with nested links.
 
 ## Snippet #3
 How I made the test:
