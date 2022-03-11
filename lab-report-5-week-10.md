@@ -14,7 +14,7 @@ In order to find two test files with different output, I did not go manually thr
 
 ![Image](Images/LabReport5DiffFile.PNG)
 
-In this difference file, the output listed first in pink is the output for my group's implementation of MarkdownParse. The output listed second in blue is the different output of the implementation of MarkdownParse provided to us. As one can see from the output, two notable differences in output (not just print statements from MarkdownParse for debugging purposes) occur at lines 215 and 273 of the `results.txt` file for my group's implementation of MarkdownParse. If we go into this `results.txt` file using vim, we can see that line 215 corresponds to test file `194.md` and that line 273 corresponds to test file `22.md`. I will include a screenshot of these lines in the vim of `results.txt` below.
+In this difference file, the output listed first in pink is the output for my group's implementation of MarkdownParse. The output listed second in blue is the different output of the implementation of MarkdownParse provided to us. As one can see from the output, two notable differences in output (not just print statements from MarkdownParse for debugging purposes) occur at lines 215 and 273 of the `results.txt` file for my group's implementation of MarkdownParse. If we go into this `results.txt` file using `vim`, we can see that line 215 corresponds to test file `194.md` and that line 273 corresponds to test file `22.md`. I will include a screenshot of these lines in the vim of `results.txt` below.
 
 ![Image](Images/LabReport5FirstDiff.PNG)
 
